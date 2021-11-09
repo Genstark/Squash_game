@@ -1,0 +1,379 @@
+[gd_scene load_steps=26 format=2]
+
+[ext_resource path="res://fonts/BalsamiqSans-Bold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://platformer-p15-assets/UI/grey_button04.png" type="Texture" id=2]
+[ext_resource path="res://platformer-p15-assets/UI/arrow-UP.png" type="Texture" id=3]
+[ext_resource path="res://player/platformChar_idle.png" type="Texture" id=4]
+[ext_resource path="res://enemies/slimeBlue_blue.png" type="Texture" id=5]
+[ext_resource path="res://coin/gold_1.png" type="Texture" id=6]
+[ext_resource path="res://platformer-p15-assets/more fonts/KiriFont.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://play_button.gd" type="Script" id=8]
+[ext_resource path="res://soundsandmusic/music/Retro Beat.ogg" type="AudioStream" id=9]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://fonts/BalsamiqSans-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 80
+font_data = SubResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.454902, 0.113725, 0.796078, 0.701961 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="DynamicFont" id=4]
+size = 34
+font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 40
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 40
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 50
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 35
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 34
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 32
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 47
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=12]
+size = 35
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=13]
+size = 30
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=14]
+size = 34
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=15]
+size = 35
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=16]
+size = 40
+font_data = ExtResource( 7 )
+
+[node name="tile_menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_top = -1.0
+margin_right = 1024.0
+margin_bottom = 599.0
+color = Color( 0.0509804, 0.0117647, 0.282353, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 198.018
+margin_top = 91.2124
+margin_right = 818.018
+margin_bottom = 201.212
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.0235294, 0.862745, 0.701961, 1 )
+text = "platformer game"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+margin_left = 40.7937
+margin_top = 336.056
+margin_right = 453.794
+margin_bottom = 560.056
+custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+margin_left = 23.8273
+margin_top = 87.6023
+margin_right = 153.827
+margin_bottom = 139.602
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect3" type="TextureRect" parent="Panel"]
+margin_left = 27.4756
+margin_top = 147.413
+margin_right = 75.4756
+margin_bottom = 192.413
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect4" type="TextureRect" parent="Panel"]
+margin_left = 102.877
+margin_top = 148.207
+margin_right = 150.877
+margin_bottom = 193.207
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="Panel"]
+anchor_left = 0.00192176
+anchor_right = 0.00192176
+margin_left = 31.5323
+margin_top = 188.207
+margin_right = 67.5323
+margin_bottom = 222.207
+rect_rotation = -90.0
+texture = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect5" type="TextureRect" parent="Panel"]
+anchor_left = 0.00192176
+anchor_right = 0.00192176
+margin_left = 145.032
+margin_top = 152.49
+margin_right = 181.032
+margin_bottom = 186.49
+rect_rotation = 90.0
+texture = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel"]
+margin_left = 14.4318
+margin_top = 95.216
+margin_right = 172.432
+margin_bottom = 137.216
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Space "
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Panel"]
+margin_left = 243.039
+margin_top = 94.2637
+margin_right = 381.039
+margin_bottom = 142.264
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Jump!"
+align = 1
+
+[node name="Label3" type="Label" parent="Panel"]
+margin_left = 155.89
+margin_top = 89.6022
+margin_right = 227.89
+margin_bottom = 140.602
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "="
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label4" type="Label" parent="Panel"]
+margin_left = 12.6992
+margin_top = 7.93701
+margin_right = 242.699
+margin_bottom = 67.937
+custom_fonts/font = SubResource( 7 )
+custom_colors/font_color = Color( 0.866667, 0.92549, 0.172549, 1 )
+text = "controlles:"
+align = 1
+
+[node name="Label5" type="Label" parent="Panel"]
+margin_left = 155.26
+margin_top = 145.669
+margin_right = 227.26
+margin_bottom = 196.669
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "="
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label6" type="Label" parent="Panel"]
+margin_left = 236.346
+margin_top = 156.667
+margin_right = 381.346
+margin_bottom = 192.667
+custom_fonts/font = SubResource( 8 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Move!"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel2" type="Panel" parent="."]
+margin_left = 581.945
+margin_top = 334.622
+margin_right = 994.945
+margin_bottom = 558.622
+custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Panel2"]
+margin_left = 10.108
+margin_top = 55.1351
+margin_right = 84.108
+margin_bottom = 120.135
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel2"]
+margin_left = 79.3826
+margin_top = 76.9438
+margin_right = 118.383
+margin_bottom = 118.944
+custom_fonts/font = SubResource( 9 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "="
+align = 1
+
+[node name="Label2" type="Label" parent="Panel2"]
+margin_left = 115.832
+margin_top = 80.1684
+margin_right = 184.832
+margin_bottom = 119.168
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "You!"
+align = 1
+
+[node name="Label3" type="Label" parent="Panel2"]
+margin_left = 3.56763
+margin_top = 8.32443
+margin_right = 179.568
+margin_bottom = 66.3244
+custom_fonts/font = SubResource( 11 )
+custom_colors/font_color = Color( 0.921569, 0.898039, 0.0509804, 1 )
+text = "Items:"
+align = 1
+
+[node name="TextureRect2" type="TextureRect" parent="Panel2"]
+margin_left = 205.733
+margin_top = 73.7308
+margin_right = 262.733
+margin_bottom = 113.731
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label4" type="Label" parent="Panel2"]
+margin_left = 252.402
+margin_top = 71.6326
+margin_right = 305.402
+margin_bottom = 114.633
+custom_fonts/font = SubResource( 12 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "="
+align = 1
+
+[node name="Label5" type="Label" parent="Panel2"]
+margin_left = 278.755
+margin_top = 79.8775
+margin_right = 406.755
+margin_bottom = 116.878
+custom_fonts/font = SubResource( 13 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Enemie!"
+align = 1
+
+[node name="TextureRect3" type="TextureRect" parent="Panel2"]
+margin_left = 204.496
+margin_top = 149.127
+margin_right = 244.496
+margin_bottom = 188.127
+texture = ExtResource( 6 )
+expand = true
+
+[node name="Label6" type="Label" parent="Panel2"]
+margin_left = 258.554
+margin_top = 148.751
+margin_right = 355.554
+margin_bottom = 190.751
+custom_fonts/font = SubResource( 14 )
+custom_colors/font_color = Color( 0.992157, 0.992157, 0.992157, 1 )
+text = "to win!"
+align = 1
+
+[node name="Label7" type="Label" parent="Panel2"]
+margin_left = 54.6827
+margin_top = 148.28
+margin_right = 191.683
+margin_bottom = 191.28
+custom_fonts/font = SubResource( 15 )
+custom_colors/font_color = Color( 1, 0.972549, 0.972549, 1 )
+text = "collect 3"
+align = 1
+
+[node name="play_button" type="Button" parent="."]
+margin_left = 342.366
+margin_top = 223.348
+margin_right = 679.366
+margin_bottom = 299.348
+custom_fonts/font = SubResource( 16 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 0.0196078, 1, 0.0862745, 1 )
+custom_colors/font_color_pressed = Color( 0.717647, 0, 1, 1 )
+text = "play"
+flat = true
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="title music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+autoplay = true
+
+[connection signal="pressed" from="play_button" to="play_button" method="_on_play_button_pressed"]
