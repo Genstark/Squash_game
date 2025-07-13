@@ -16,17 +16,14 @@ font_data = ExtResource( 1 )
 margin_right = 1024.0
 margin_bottom = 600.0
 color = Color( 0.32549, 0.00784314, 0.00784314, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Label" type="Label" parent="."]
 margin_left = 158.0
 margin_top = 98.0
 margin_right = 837.0
 margin_bottom = 222.0
-custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 1 )
 text = "GAME OVER"
 align = 1
 __meta__ = {
@@ -38,10 +35,10 @@ margin_left = 336.503
 margin_top = 282.929
 margin_right = 654.503
 margin_bottom = 370.929
-custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.933333, 0.552941, 0, 1 )
 custom_colors/font_color_hover = Color( 0.00392157, 0.231373, 0.117647, 1 )
 custom_colors/font_color_pressed = Color( 0.0117647, 0.305882, 0.376471, 1 )
+custom_fonts/font = SubResource( 2 )
 text = "main menu"
 flat = true
 script = ExtResource( 3 )

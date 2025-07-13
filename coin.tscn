@@ -45,7 +45,6 @@ shape = SubResource( 1 )
 position = Vector2( 0, 3.8147e-06 )
 frames = SubResource( 2 )
 animation = "coin"
-frame = 2
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

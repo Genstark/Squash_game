@@ -6,7 +6,7 @@ const speed = 180
 const gravity = 35
 const jumpforce = -950
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	if Input.is_action_pressed("Right"):
 		velocity.x = speed 
 		$Sprite.play("walk")
@@ -32,15 +32,15 @@ func _physics_process(delta):
 	velocity = move_and_slide(velocity, Vector2.UP)
 	
 	velocity.x = lerp(velocity.x,0,0.5)
-	
-	
-func _on_fallzone_body_entered(body):
+
+
+func _on_fallzone_body_entered(_body):
 	get_tree().change_scene("res://over.tscn")
-	
-	
+
+
 func bounce():
 	velocity.y = jumpforce * 0.7
-	
+
 func ouch(var enemyposx):
 	set_modulate(Color(1,0.3,0.3,0.3))
 	velocity.y = jumpforce * 0.5

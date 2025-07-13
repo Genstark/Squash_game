@@ -79,9 +79,6 @@ font_data = ExtResource( 7 )
 [node name="tile_menu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="ColorRect" type="ColorRect" parent="."]
 margin_top = -1.0
@@ -350,7 +347,7 @@ margin_right = 189.055
 margin_bottom = 191.378
 custom_colors/font_color = Color( 1, 0.972549, 0.972549, 1 )
 custom_fonts/font = SubResource( 15 )
-text = "collect 20"
+text = "collect 22"
 align = 1
 
 [node name="play_button" type="Button" parent="."]
