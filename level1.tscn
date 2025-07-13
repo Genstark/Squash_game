@@ -169,9 +169,6 @@ margin_top = 7.24492
 margin_right = 271.755
 margin_bottom = 117.245
 custom_styles/panel = SubResource( 7 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="TextureRect" type="TextureRect" parent="HOD"]
 margin_left = 33.6529
