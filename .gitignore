@@ -1,1 +1,4 @@
-.import
+.import/
+
+# Ignore all *.import files anywhere in the project
+**/*.import
